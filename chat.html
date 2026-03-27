@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - SmartInvest AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <a href="index.html" class="back-btn">← Back</a>
+            <div class="chat-title">
+                <h2>💰 SmartInvest AI</h2>
+                <p class="status">Online</p>
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome message -->
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hi! I'm your AI investment assistant for Kenya. I help young people learn about investing in Money Market Funds and stocks. 🎯</p>
+                    <p>What would you like to do today?</p>
+                </div>
+            </div>
+            
+            <!-- Initial Options -->
+            <div class="message bot-message">
+                <div class="button-group">
+                    <button class="option-btn" onclick="handleOption('learn')">📚 Learn Investing Basics</button>
+                    <button class="option-btn" onclick="handleOption('advice')">💡 Get Investment Advice</button>
+                    <button class="option-btn" onclick="handleOption('question')">❓ Ask a Question</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-container">
+            <input 
+                type="text" 
+                id="userInput" 
+                class="chat-input" 
+                placeholder="Type your message..."
+                onkeypress="handleKeyPress(event)"
+            >
+            <button class="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+  <!-- Link JavaScript Files -->
+<script src="js/responses.js"></script>
+<script src="js/script.js"></script>
+<script src="js/ai-integration.js"></script>
+</body>
+</html>
