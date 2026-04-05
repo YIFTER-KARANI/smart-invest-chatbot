@@ -116,13 +116,14 @@ smart-invest-chatbot/
 
 ## 📱 Screenshots
 
-*(Add screenshots here once you take them)*
-
 ### Landing Page
-Coming soon...
+![Landing Page](images/landing-page.png)
 
 ### Chat Interface
-Coming soon...
+![Chat Interface](images/chat-interface.png)
+
+### Conversation Example
+![Conversation](images/conversation-example.png)
 
 ---
 
